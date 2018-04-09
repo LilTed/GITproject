@@ -1,5 +1,3 @@
-
-
 //Adding event listener to divide button
 
 $("#divide").on("click", function (e) {
@@ -24,6 +22,12 @@ $("#multiply").click(function(){
 
 });
 
+$("#add").on("click", function (add) {
+    let result = Number($("#firstNumber").val())
+        +Number($("#secondNumber").val());
+    
+        $("#result").text(result);
+});
 
 //Adding event listener to reset button
 $("#reset").on("click", function (e) {
