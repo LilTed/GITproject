@@ -1,3 +1,4 @@
+
 //Adding event listener to divide button
 
 $("#divide").on("click", function (e) {
@@ -7,7 +8,6 @@ $("#divide").on("click", function (e) {
 
     $("#result").text(result);
     console.log(result);
-
 });
 
 
@@ -20,9 +20,30 @@ $("#multiply").click(function(){
     let multi2 = Number($("#secondNumber").val());
     let multiResult;
 
+});
+
+let subtract = document.querySelector("#subtract");
+let field1 = document.querySelector("#firstNumber");
+let field2 = document.querySelector("#secondNumber");
+let p = document.querySelector("#result");
+
+subtract.addEventListener("click", subtraction);
+
+function subtraction(){
+    let result = parseInt(field1.value - field2.value);
+    p.innertext = result;
+}
+
+
+    multiResult = multi1 * multi2;
+    $("#result").val(multiResult);
+
 
     multiResult =multi1 * multi2;
     $("#result").text(multiResult);
+
+});
+
 
 });
 
