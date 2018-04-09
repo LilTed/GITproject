@@ -22,3 +22,10 @@ $("#multiply").click(function(){
     console.log(multiResult);
 
 });
+
+//Adding event listener to reset button
+$("#reset").on("click", function (e) {
+    $("#firstNumber").val("");
+    $("#secondNumber").val("");
+    $("#result").text("");
+});
