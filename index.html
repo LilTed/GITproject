@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,30 @@
 
     <title>GIT PROJECT</title>
 </head>
+
 <body>
-    <h1>This is a calculator</h1>
-   
-        <input type="text" id="firstNumber"></input>
+    <div id="wrapper">
+        <h1>This is a calculator</h1>
+
+        <input type="number" id="firstNumber" required></input>
         <button id="add">++++</button>
         <button id="subtract">----</button>
         <button id="multiply">****</button>
-        <button id="divide" >////</button>
-        <input type="text" id="secondNumber"></input>
-  
-    
-    <h2>Result:</h2>
-    <p id="result"></p>
+        <button id="divide">////</button>
+        <input type="number" id="secondNumber" required></input>
 
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
+        <h2>Result:</h2>
+        <p id="result"></p>
+
+        <button id="reset">Reset</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>

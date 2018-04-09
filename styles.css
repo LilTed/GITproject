@@ -21,4 +21,9 @@ text-align: center;
 font-size: 10em;
 }
 
+button:hover {
+    color : red;
+    background-color: tomato;
+}
+
 
