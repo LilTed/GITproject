@@ -10,7 +10,13 @@ let multi2 = $("#secondnumber").val();
 let multiResult;
 
 $("#multiply").click(function(){
+<<<<<<< HEAD
     multiResult = multi1 * multi2;
     $("#result").val(multiResult);
 
+=======
+    multiResult = parseInt(multi1) * parseInt(multi2);
+    $("#result").text(multiResult);
+    console.log(multiResult);
+>>>>>>> eu
 });
