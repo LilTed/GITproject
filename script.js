@@ -2,7 +2,7 @@
 
 //Adding event listener to divide button
 $("multiply").on("click", function (e) {
-    let result = Number($("firstNumber").value)/Number($("secondNumber").value);
+    let result = Number($("firstNumber").val())/Number($("secondNumber").val());
     $("result").html(result);
 
 let multi1 = $("#firstnumber").val();
