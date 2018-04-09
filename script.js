@@ -3,7 +3,12 @@
 //Adding event listener to divide button
 $("#divide").on("click", function (e) {
     let result = Number($("#firstNumber").val())/Number($("#secondNumber").val());
+
     $("#result").html(result);
+
+    $("#result").text(result);
+    console.log(result);
+
 });
 
 let multi1 = $("#firstnumber").val();
@@ -20,4 +25,11 @@ $("#multiply").click(function(){
     $("#result").text(multiResult);
     console.log(multiResult);
 
+});
+
+//Adding event listener to reset button
+$("#reset").on("click", function (e) {
+    $("#firstNumber").val("");
+    $("#secondNumber").val("");
+    $("#result").text("");
 });
