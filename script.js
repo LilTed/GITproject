@@ -1,19 +1,26 @@
 
 
 //Adding event listener to divide button
-//$("multiply").on("click", function (e) {
-  //  let result = Number($("firstNumber").value)/Number($("secondNumber").value);
-    //$("result").html(result);
 
-//}
+$("#divide").on("click", function (e) {
+    let result = Number($("#firstNumber").val())/Number($("#secondNumber").val());
+    $("#result").text(result);
+    console.log(result);
+});
+
 
 //////// EUGENS MULTIPLY //////
-let multi1 = $("#firstnumber").val();
-let multi2 = $("#secondnumber").val();
-let multiResult;
+
 
 $("#multiply").click(function(){
-    multiResult = multi1 * multi2;
-    $("#result").val(multiResult);
-    console.log(multiResult);
+    
+    let multi1 = Number($("#firstNumber").val());
+    let multi2 = Number($("#secondNumber").val());
+    let multiResult;
+
+
+    multiResult =multi1 * multi2;
+    $("#result").text(multiResult);
+
 });
+/////////////////////////////////
