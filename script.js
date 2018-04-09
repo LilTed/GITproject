@@ -7,7 +7,7 @@ $("#divide").on("click", function (e) {
 });
 
 
-//////// EUGENS MULTIPLY //////
+//////// EUGENS MULTIPLY (dont touch) //////
 
 
 $("#multiply").click(function(){
@@ -28,6 +28,7 @@ $("#add").on("click", function (add) {
     
         $("#result").text(result);
 });
+
 
 //Adding event listener to reset button
 $("#reset").on("click", function (e) {
