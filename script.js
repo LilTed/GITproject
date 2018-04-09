@@ -2,9 +2,13 @@
 //Adding event listener to divide button
 
 $("#divide").on("click", function (e) {
+
     let result = Number($("#firstNumber").val())/Number($("#secondNumber").val());
 
     $("#result").html(result);
+
+
+    let result = Number($("#firstNumber").val()) / Number($("#secondNumber").val());
 
     $("#result").text(result);
     console.log(result);
@@ -14,11 +18,14 @@ $("#divide").on("click", function (e) {
 //////// EUGENS MULTIPLY (dont touch) //////
 
 
-$("#multiply").click(function(){
-    
+$("#multiply").click(function () {
+
     let multi1 = Number($("#firstNumber").val());
     let multi2 = Number($("#secondNumber").val());
     let multiResult;
+
+    multiResult = multi1 * multi2;
+    $("#result").text(multiResult);
 
 });
 
@@ -29,29 +36,18 @@ let p = document.querySelector("#result");
 
 subtract.addEventListener("click", subtraction);
 
-function subtraction(){
+function subtraction() {
     let result = parseInt(field1.value - field2.value);
-    p.innertext = result;
+    $("#result").text(result);
+    
 }
 
 
-    multiResult = multi1 * multi2;
-    $("#result").val(multiResult);
-
-
-    multiResult =multi1 * multi2;
-    $("#result").text(multiResult);
-
-});
-
-
-});
-
 $("#add").on("click", function (add) {
     let result = Number($("#firstNumber").val())
-        +Number($("#secondNumber").val());
-    
-        $("#result").text(result);
+        + Number($("#secondNumber").val());
+
+    $("#result").text(result);
 });
 
 
