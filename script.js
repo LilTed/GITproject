@@ -4,7 +4,6 @@
 $("#divide").on("click", function (e) {
     let result = Number($("#firstNumber").val())/Number($("#secondNumber").val());
     $("#result").text(result);
-    console.log(result);
 });
 
 
